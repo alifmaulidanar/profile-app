@@ -1,0 +1,63 @@
+@font-face {
+    font-family: 'Noto Sans';
+    src: url(../assets/fonts/NotoSans-Regular.ttf);
+}
+
+/* * {
+    font-weight: 500;
+} */
+
+body {
+    background-color: #2B3035 !important;
+	color: rgba(255, 255, 255, 0.92) !important;
+    font-family: 'Noto Sans';
+}
+
+.container {
+	max-width: 65% !important;
+}
+
+/* .jumbotron {
+    min-height: 25rem !important;
+    max-height: 25rem !important;
+} */
+
+.greeting {
+    font-size: 3rem;
+}
+
+/* .paragraph1, .paragraph2 {
+    font-size: 1.125;
+} */
+
+/* .border-bottom {
+    max-width: 53.3rem !important;
+} */
+
+.circle {
+    width: 300px;
+    height: 300px;
+    background-color: #171923;
+    border-radius: 250px;
+    /* margin-top: 36px;
+    margin-left: 155px; */
+}
+
+.profile-pic {
+    width: 300px;
+    height: 300px;
+    border-radius: 250px;
+}
+
+.about .card, .getintouch .card {
+    width: 100% !important;
+}
+
+.card {
+    background-color: rgba(18, 21, 29, 0.95) !important;
+}
+
+.footer-icon {
+    width: 22px;
+    height: 22px;
+}
