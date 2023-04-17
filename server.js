@@ -4,7 +4,7 @@ const Path = require('path');
 
 const init = async () => {
   const server = Hapi.server({
-      port: 9000,
+      port: 8080,
       host: 'localhost',
       routes: {
         files: {
@@ -17,18 +17,19 @@ const init = async () => {
 
   server.route({
     method: 'GET',
-    path: '/{param*}',
-    handler: {
-      directory: {
-        path: '.',
-        redirectToSlash: true,
-        index: true,
-      }
+    path: '/',
+    handler: (request, h) => {
+      return h.file('index.html');
     }
   });
 
   await server.start();
   console.log(`Server berjalan pada ${server.info.uri}`);
 };
+
+process.on('unhandledRejection', (err) => {
+    console.log(err);
+    process.exit(1);
+});
 
 init();

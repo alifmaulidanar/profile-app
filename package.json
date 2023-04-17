@@ -13,6 +13,7 @@
     "nodemon": "^2.0.22"
   },
   "dependencies": {
+    "@google-cloud/storage": "^5.20.5",
     "@hapi/hapi": "^21.3.1",
     "@hapi/inert": "^7.1.0",
     "fs": "^0.0.1-security",
