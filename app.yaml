@@ -1,8 +1,10 @@
 runtime: nodejs18
 
-env_variables:
-  GCLOUD_BUCKET: dicoding-profile-app-11451
-
 handlers:
   - url: /.*
-    script: auto
+    static_files: app/index.html
+    upload: app/index.html
+
+env_variables:
+  GCLOUD_BUCKET: dicoding-profile-app-11451
+  
